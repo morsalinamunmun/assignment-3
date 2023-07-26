@@ -21,29 +21,36 @@
       .poppins-font{
         font-family: 'Poppins', sans-serif;
       }
-      *{
-        max-width: 1024px;
-        margin: 0 auto;
-      }
     </style>
 </head>
 <body class="poppins-font">
     <!-- header section -->
-    <header>
-        <div class="navbar bg-rose-500 rounded-full items-center">
-            <div class="">    
-                <ul tabindex="0" class="menu menu-sm flex flex-row items-center text-white z-[1] p-2 ">
+    <header class="container mx-auto">
+        <div class="navbar bg-rose-500 justify-between rounded-full items-center">
+            <div class="navbar-start w-auto">    
+                <ul tabindex="0" class="menu menu-sm md:hidden sm:hidden flex flex-row items-center text-white z-[1] p-2 ">
                   <li><a class="text-base">Home</a></li>
                   <li><a class="text-base">About Us</a></li>
                   <li><a class="text-base">Shop</a></li>
                   <li><a class="text-base" href="">All Fruits</a></li>
                 </ul>
+                <div class="dropdown lg:hidden">
+                  <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-base">Home</a></li>
+                  <li><a class="text-base">About Us</a></li>
+                  <li><a class="text-base">Shop</a></li>
+                  <li><a class="text-base" href="">All Fruits</a></li>
+                  </ul>
+                </div>
             </div>
-            <div class="navbar-center items-center">
+            <div class="navbar-center text-center items-center">
                 <img src="images/logo.png" width="30px" alt="Logo">
               <a class="btn btn-ghost normal-case text-2xl">Fruit Burst</a>
             </div>
-            <div class="justify-end">
+            <div class="pr-4">
               <form action="" class="p-2 bg-white rounded-3xl ">
                 <input type="text" class="text-sm" placeholder="Search here.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -52,7 +59,162 @@
           </div>
     </header>
     <!-- main section-->
-    <main></main>
+    <main class="container mx-auto">
+      <!-- hero section start -->
+      <section class="py-5">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+      <!-- card section start -->
+      <section class="py-10">
+          <div class="grid grid-cols-4 gap-10">
+                <!-- card-1 -->
+                <div class="card  bg-base-100 border-2 border-slate-300">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-slate-500 text-base">Admin</p>
+                    <div class="rating rating-lg rating-half w-28">
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                      <button class="p-2 text-rose-500 text-base font-semibold">Details</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card  bg-base-100 border-2 border-slate-300">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-slate-500 text-base">Orange</p>
+                    <div class="rating rating-lg rating-half w-28">
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                      <button class="p-2 text-rose-500 text-base font-semibold">Details</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card  bg-base-100 border-2 border-slate-300">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-slate-500 text-base">Red Dragon</p>
+                    <div class="rating rating-lg rating-half w-28">
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                      <button class="p-2 text-rose-500 text-base font-semibold">Details</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-4 -->
+                <div class="card  bg-base-100 border-2 border-slate-300">
+                  <figure class="px-10 pt-10">
+                    <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-xl">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-slate-500 text-base">Banana</p>
+                    <div class="rating rating-lg rating-half w-28">
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" checked />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-1" />
+                      <input type="radio" name="rating-10" class="bg-rose-500 mask mask-star-2 mask-half-2" />
+                    </div>
+                    <div class="card-actions">
+                      <button class="p-2 text-rose-500 text-base font-semibold">Details</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <button class="flex items-center m-auto bg-rose-500 px-5 py-2 rounded mt-5">Shop All</button>
+      </section>
+      <!-- card section end -->
+      <!-- team section start -->
+      <section>
+        
+      </section>
+      <!-- team section end -->
+    </main>
     <!-- footer section -->
     <footer></footer>
 </body>
