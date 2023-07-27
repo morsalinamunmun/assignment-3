@@ -21,6 +21,11 @@
       .poppins-font{
         font-family: 'Poppins', sans-serif;
       }
+      .bg-opa{
+          background-color: black;
+          background: overlay;
+          opacity: 60%;
+        }
     </style>
 </head>
 <body class="poppins-font">
@@ -57,10 +62,10 @@
             </form>
           </div>
           <!-- hero section -->
-          <section class="mt-16">
+          <section class="mt-16 container mx-auto">
             <div>
               <div class="carousel w-full relative">
-                <div id="slide1" class="carousel-item relative w-full hero-overlay contrast-50 bg-opacity-60">
+                <div id="slide1" class="carousel-item relative w-full hero-overlay bg-opa bg-opacity-60">
                   <div class="relative">
                     <img src="./images/banner1.png" class="w-full min-h-screen" />
                     <div class="absolute h-full w-full top-0 left-0 flex flex-col justify-center items-center space-y-2">
@@ -82,7 +87,7 @@
                     <a href="#slide2" class="btn btn-circle">❯</a>
                   </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full hero-overlay bg-opacity-60">
+                <div id="slide2" class="carousel-item relative w-full hero-overlay bg-opa bg-opacity-60">
                   <div class="relative">
                     <img src="./images/banner2.png" class="w-full min-h-screen" />
                     <div class="absolute h-full w-full top-0 left-0 flex flex-col justify-center items-center space-y-2">
@@ -101,7 +106,7 @@
                     <a href="#slide3" class="btn btn-circle">❯</a>
                   </div>
                 </div>
-                <div id="slide3" class="carousel-item relative w-full hero-overlay contrast-50 bg-opacity-60">
+                <div id="slide3" class="carousel-item relative w-full hero-overlay bgopa bg-opacity-60 ">
                   <div class="relative">
                     <img src="./images/banner3.png" class="w-full min-h-screen" />
                     <div
@@ -121,9 +126,9 @@
                     <a href="#slide4" class="btn btn-circle">❯</a>
                   </div>
                 </div>
-                <div id="slide4" class="carousel-item relative w-full hero-overlay contrast-50 bg-opacity-60">
+                <div id="slide4" class="carousel-item relative w-full hero-overlay bg-opa bg-opacity-60">
                   <div class="relative">
-                    <img src="./images/banner3.png" class="w-full min-h-screen" />
+                    <img src="./images/banner4.png" class="w-full min-h-screen" />
                     <div
                       class="absolute h-full w-full top-0 left-0 flex flex-col justify-center items-center space-y-2">
                       <h1 class="text-white text-4xl font-black text-center">
@@ -176,7 +181,7 @@
     <!-- main section-->
     <main class="container mx-auto">
       <!-- card section start -->
-      <section class="py-10 lg:mt-16">
+      <section class="py-10 lg:mt-24">
         <div class="flex flex-col md:flex-row justify-between mb-10 items-center">
           <div class="text-center lg:text-left">
             <h2 class="text-3xl font-bold mb-2">Deal of the day</h2>
@@ -428,10 +433,10 @@
       <!-- card section end -->
       <!-- team section start -->
       <section class="">
-        <div class="hero" style="background-image: url('images/team.png');">
+        <div class="hero relative" style="background-image: url('images/team.png');">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
-            <div class="mb-52">
+            <div class="mb-52 absolute top-20 bottom-96">
               <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
               <p class="mb-5 text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
